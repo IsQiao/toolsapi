@@ -6,7 +6,7 @@ ENV GO111MODULE=on \
 WORKDIR /app
 COPY . .
 RUN go build .
-RUN chmod +x toolsapis
+RUN chmod +x toolapis
 
 EXPOSE 8080
-ENTRYPOINT ["./toolsapis"]
+ENTRYPOINT ["./toolapis"]
